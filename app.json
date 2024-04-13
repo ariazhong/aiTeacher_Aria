@@ -1,0 +1,14 @@
+{
+    "pages": ["pages/index/index", "pages/dialogue/dialogue", "pages/grade-select/grade-select", "pages/user/user", "pages/userInfo/userInfo", "pages/changeInfo/changeInfo", "pages/feedBack/feedBack"],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarBackgroundColor": "#ffffff"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "useExtendedLib": {
+        "weui": true
+    }
+}

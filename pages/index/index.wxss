@@ -1,0 +1,31 @@
+/* 开屏页容器样式 */
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #FFEED4; 
+    color: #944424; 
+    padding: 30px; 
+  }
+  
+  /* Logo文字样式 */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  .logo-image {
+    width: 150px; 
+    height: 150px; 
+  }  
+  
+  /* 标语文本样式 */
+  .tagline {
+    font-size: 14px; 
+    color: #944424;
+  }
+  

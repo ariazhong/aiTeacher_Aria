@@ -1,0 +1,20 @@
+<view class="header" style="width: 750rpx; height: 115rpx; display: flex; box-sizing: border-box">
+  <image style="width: 121rpx; height: 103rpx; display: block; box-sizing: border-box" src="/images/quest-logo.png" class="logo"></image>
+</view>
+
+<scroll-view class="scroll-view" scroll-y="true">
+  <view class="container" style="width: 750rpx; height: 1384rpx; display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box; padding: 60rpx 0;">
+    <view class="text-box" style="background-color: rgba(255, 255, 255, 0.5); border-radius: 20rpx; padding: 20rpx; width: 677rpx; margin-top: 3rpx; margin-bottom: 20rpx; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 248rpx; box-sizing: border-box">
+      <view class="title" style="color: #944424; margin-bottom: 10rpx; font-size: 30rpx; text-align: center;">欢迎同学来到问知</view>
+      <view class="description" style="color: #944424; font-size: 24rpx; text-align: center;">请选择你现在的阶段：</view>
+    </view>
+    <view class="grade-container">
+      <!-- 循环渲染年级按钮，并标记选中的按钮 -->
+      <button wx:for="{{grades}}" wx:key="index" class="grade-button {{selectedGrade === item ? 'selected' : ''}}" bindtap="selectGrade" data-grade="{{item}}">
+        {{item}}
+      </button>
+    </view>
+    <!-- 按钮初始禁用，选中年级后可用 -->
+    <button class="enter-quest-btn" bindtap="enterQuest" disabled="{{!gradeSelected}}" style="width: 426rpx; height: 71rpx; display: block; box-sizing: border-box; margin: 20rpx 0;">进入Quest</button>
+  </view>
+</scroll-view>

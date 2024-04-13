@@ -1,0 +1,69 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box; 
+    background: #FFEED4 
+    
+  }
+  
+  .scroll-view {
+    width: 100%; 
+    height: 100%; 
+  }
+  
+
+  .grade-container {
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+  }
+  
+
+.grade-button {
+    background-color: #944424; 
+    border: 2px solid transparent;
+    border-radius: 25px; 
+    margin: 10px 0; 
+    width: 80%; 
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #FFEED4; 
+    font-size: 16px;
+    transition: border 0.3s ease; 
+}
+
+.grade-button.selected {
+    border-color: #FFEED4; 
+}
+
+.enter-quest-btn {
+    background-color: transparent;
+    color: #944424;
+    border: 2px solid #944424;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    width: 426rpx; 
+    height: 71rpx; 
+}
+
+
+.header {
+    background-color: #FFEED4; 
+    display: flex;
+    justify-content: center; 
+    padding: 10px; 
+  }
+  
+.logo {
+    width: 100px; 
+    height: auto; 
+  }
+  
+
+  

@@ -1,0 +1,49 @@
+<view class="button-container">
+    <navigator url="/pages/userInfo/userInfo" open-type="navigate">
+        <button class="join-button">加入Quest</button>
+    </navigator>
+</view>
+
+
+<view class="container">
+	<scroll-view scroll-into-view="{{toView}}" scroll-y="true" class="diaCon">
+		<view wx:for="{{history}}" wx:key="index" class="dialogue-item" id="item{{index}}">
+			<view wx:if="{{item.role === 'user'}}" class="user-dialogue">
+				<view class="con">
+					{{item.content}}
+				</view>
+				<view class="avatar">人</view>
+			</view>
+			<view wx:else class="robot-dialogue">
+				<view class="avatar">机</view>
+				<view class="con">
+					{{item.content}}
+				</view>
+			</view>
+		</view>
+		<mp-loading show="{{loading}}"></mp-loading>
+	</scroll-view>
+
+    <swiper class="guide-swiper" indicator-dots="true">
+        <swiper-item>
+            <button class="swiper-button" bindtap="sendMessage" data-message="使用指南" style="width: 323rpx; height: 69rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; border: 1px solid #ff5307;">使用指南</button>
+        </swiper-item>
+        <swiper-item>
+            <button class="swiper-button" bindtap="sendMessage" data-message="作文提分" style="width: 323rpx; height: 69rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; border: 1px solid #ff5307;">作文提分</button>
+        </swiper-item>
+        <swiper-item>
+            <button class="swiper-button" bindtap="sendMessage" data-message="阅读理解" style="width: 323rpx; height: 69rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; border: 1px solid #ff5307;">阅读理解</button>
+        </swiper-item>
+        <swiper-item>
+            <button class="swiper-button" bindtap="sendMessage" data-message="英语水平测试" style="width: 323rpx; height: 69rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; border: 1px solid #ff5307;">英语水平测试</button>
+        </swiper-item>
+    </swiper>
+
+
+	<view class="userCon" style="bottom: {{conBottom}}rpx;">
+        <button class="photo-button" bindtap="takePhoto">📷</button>
+		<input class="userConInput" bindkeyboardheightchange="getFocus" type="text" maxlength="-1" adjust-position="false" model:value="{{useContent}}" placeholder="请输入你的问题" />
+		<button class="sub" bindtap="sub">发送</button>
+	</view>
+</view>
+

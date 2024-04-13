@@ -1,0 +1,6 @@
+<view class="splash-container">
+  <view class="logo-container">
+    <image src="/images/quest-logo.png" class="logo-image"></image>
+  </view>
+  <text class="tagline">问知 - 你的24小时专属英语老师</text>
+</view>

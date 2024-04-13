@@ -1,0 +1,182 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+    width: 100%; 
+    position: relative;
+}
+
+.button-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    z-index: 200;
+}
+
+
+.join-button {
+    background-color: #fff; 
+    border-radius: 50px; 
+    color: #ff5307; 
+    padding: 8px 10px; 
+    font-size: 14px;
+    border: none; 
+    border-radius: 5px; 
+    max-width: 100px; 
+    border: 1px solid #ff5307;
+}
+
+
+.container {
+    flex: 1; 
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px; 
+}
+
+
+.diaCon {
+    flex: 1; 
+    height: 90%;
+    width: 100%;
+    background-color: #fff;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.dialogue-item {
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    height: 70rpx;
+    width: 70rpx;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-bottom: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    max-width: 500rpx;
+    padding: 20rpx;
+    letter-spacing: 3rpx;
+    border-radius: 20rpx;
+    border: 1px solid #ff5307;
+    background-color: #FFEED4;
+}
+
+.user-dialogue {
+    display: flex;
+    align-self: flex-end;
+}
+
+.user-dialogue .avatar {
+    margin-left: 20rpx;
+}
+
+user-dialogue .con {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.robot-dialogue {
+    display: flex;
+    align-self: flex-start;
+}
+
+.robot-dialogue .avatar {
+    margin-right: 20rpx;
+}
+
+.userCon {
+    height: 80rpx;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    margin-bottom: 40rpx; 
+    bottom: 0; 
+}
+
+
+
+.photo-button {
+    flex-grow: 0; 
+    flex-shrink: 0;
+    flex-basis: 10%; 
+    border: 1px solid #ff5307;
+    background-color: #ffffff;
+    border-radius: 10rpx; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+
+
+.userConInput {
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: auto; 
+    border: 1px solid #ff5307;
+    font-size: 29rpx;
+    padding: 0 15rpx; 
+    border-radius: 10rpx; 
+    background-color: #ffffff;
+    color: #000;
+    height: 100%; 
+    margin: 0 10rpx; 
+}
+
+.sub {
+    flex-grow: 0; 
+    flex-shrink: 0;
+    flex-basis: 25%; 
+    border: 1px solid #ff5307;
+    background-color: #ffffff;
+    border-radius: 10rpx; /* 圆角 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+.guide-swiper {
+    z-index: 900;
+    position: fixed;
+    bottom: 150rpx; /* 这个值需要大于 userCon 的高度 */
+    width: 100%;
+    height: 180rpx; 
+    background-color: #fff;
+}
+
+.swiper-button {
+    z-index: 999;
+    width: 320rpx; 
+    height: 69rpx; 
+    border: 1px solid #ff5307;
+    background-color: #fff;
+    border-radius: 50px; 
+    font-size: 16px;
+    border: none;
+    margin: 20px 5%; 
+    display: block; 
+    box-sizing: border-box;
+    left: 0rpx;
+    top: 0rpx;
+}
